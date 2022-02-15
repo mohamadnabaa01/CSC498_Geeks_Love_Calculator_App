@@ -31,16 +31,16 @@ public class MainActivity extends AppCompatActivity {
         TextView result = (TextView) findViewById(R.id.result);
         Random random = new Random();
         if(language.equals("C")){
-            image_language.setImageResource(R.drawable.C);
+            image_language.setImageResource(R.drawable.c);
         }
         if(language.equals("C++")){
-            image_language.setImageResource(R.drawable.Cplusplus);
+            image_language.setImageResource(R.drawable.cplusplus);
         }
         if(language.equals("C#")){
-            image_language.setImageResource(R.drawable.Csharp);
+            image_language.setImageResource(R.drawable.csharp);
         }
         if(language.equals("R")){
-            image_language.setImageResource(R.drawable.R);
+            image_language.setImageResource(R.drawable.r);
         }
         if(language.equals("php")){
             image_language.setImageResource(R.drawable.php);
