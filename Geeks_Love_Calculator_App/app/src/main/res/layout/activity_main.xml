@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/full_name"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.133" />
 
     <TextView
         android:id="@+id/textView"
@@ -48,15 +48,15 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/programming_languages_list"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/full_name"
-        app:layout_constraintVertical_bias="0.625" />
+        app:layout_constraintVertical_bias="0.425" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="411dp"
-        android:layout_height="189dp"
+        android:layout_width="412dp"
+        android:layout_height="198dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
@@ -376,7 +376,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/programming_languages_list"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.055" />
 
     <ImageView
         android:id="@+id/language_logo"
