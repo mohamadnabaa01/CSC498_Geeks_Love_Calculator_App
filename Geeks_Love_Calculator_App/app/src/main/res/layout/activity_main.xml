@@ -32,10 +32,10 @@
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/full_name"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.141" />
 
     <TextView
         android:id="@+id/textView"
@@ -51,18 +51,18 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/full_name"
-        app:layout_constraintVertical_bias="0.484" />
+        app:layout_constraintVertical_bias="0.625" />
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="380dp"
-        android:layout_height="349dp"
+        android:layout_width="386dp"
+        android:layout_height="234dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/programming_languages_list"
-        app:layout_constraintVertical_bias="0.876">
+        app:layout_constraintVertical_bias="1.0">
 
         <TableRow
             android:layout_width="wrap_content"
@@ -121,6 +121,33 @@
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/programming_languages_list" />
+        app:layout_constraintTop_toBottomOf="@+id/programming_languages_list"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/language_logo"
+        android:layout_width="139dp"
+        android:layout_height="133dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calculate_Love"
+        app:layout_constraintVertical_bias="0.257"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_logo"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

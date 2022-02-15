@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Spinner dropdown_list;
+    private static Spinner dropdown_list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +25,35 @@ public class MainActivity extends AppCompatActivity {
         dropdown_list.setAdapter(adapter);
     }
 
-    public static void calculate_love(View view){
-
+    public void calculate_love(View view){
+        String language = dropdown_list.getContext().toString();
+        ImageView image_language = (ImageView) findViewById(R.id.language_logo);
+        TextView result = (TextView) findViewById(R.id.result);
+        Random random = new Random();
+        if(language.equals("C")){
+            image_language.setImageResource(R.drawable.C);
+        }
+        if(language.equals("C++")){
+            image_language.setImageResource(R.drawable.Cplusplus);
+        }
+        if(language.equals("C#")){
+            image_language.setImageResource(R.drawable.Csharp);
+        }
+        if(language.equals("R")){
+            image_language.setImageResource(R.drawable.R);
+        }
+        if(language.equals("php")){
+            image_language.setImageResource(R.drawable.php);
+        }
+        if(language.equals("python")){
+            image_language.setImageResource(R.drawable.pyhton);
+        }
+        if(language.equals("javascript")){
+            image_language.setImageResource(R.drawable.js);
+        }
+        image_language.setVisibility(View.VISIBLE);
+        result.setText("Love Percentage: "+ random.nextInt(100) + " %");
+        result.setVisibility(View.VISIBLE);
     }
 
 }
